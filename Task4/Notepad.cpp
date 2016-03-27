@@ -82,9 +82,7 @@ void CNotepadWindow::saveText()
 		DWORD a;
 		WriteFile(fileHandle, buffer, textLength, &a, 0);
 		CloseHandle(fileHandle);
-	} else ::MessageBox(handle, L"huy tam plaval", L"Notepad", 0);
-
-	
+	} 	
 }
 
 bool CNotepadWindow::OnClose()
